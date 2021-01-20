@@ -19,7 +19,7 @@ My code and blog posts about various data science topics and applications. Post 
 | Title        | Medium article           | Repository  |
 | ------------- |:-------------:| :-----:|
 | Python Optimization with Merge and Concatenation      | [link](https://medium.com/@khuyentran1476/comprehensive-numpy-tutorials-for-beginners-8b88696bd3a2) | [link](./python/Numpy_tricks.ipynb) |
-| 
+
 
 # Applications
 | Title        | Medium article           | Repository  |
