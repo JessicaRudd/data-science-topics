@@ -18,7 +18,7 @@ My code and blog posts about various data science topics and applications. Post 
 # Python
 | Title        | Medium article           | Repository  |
 | ------------- |:-------------:| :-----:|
-| Python Optimization with Merge and Concatenation      | [link](https://medium.com/@khuyentran1476/comprehensive-numpy-tutorials-for-beginners-8b88696bd3a2) | [link](./python/optimization/pairwise_comparison/pairwise_comparison.ipynb) |
+| Python Optimization with Merge and Concatenation      | [link](https://funsizeathlete.medium.com/a-surprising-lesson-in-python-optimization-805fb6cd339e) | [link](./python/optimization/pairwise_comparison/pairwise_comparison.ipynb) |
 
 
 # Applications
