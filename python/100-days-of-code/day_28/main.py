@@ -1,7 +1,9 @@
 from tkinter import *
+from PIL import Image, ImageTk
 import math
 import chime
-
+import os
+import sys
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -14,6 +16,14 @@ LONG_BREAK_MIN = 20
 reps = 0
 timer = None
 chime.theme('mario')
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
@@ -72,8 +82,10 @@ title_label = Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
 title_label.grid(column=1, row=0)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="tomato.png")
-canvas.create_image(100, 112, image=tomato_img)
+# tomato_img = PhotoImage(file="tomato.png")
+tomato_img = Image.open(resource_path("./tomato.png"))
+ph = ImageTk.PhotoImage(tomato_img)
+canvas.create_image(100, 112, image=ph)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
 
